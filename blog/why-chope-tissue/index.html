@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Why do Singaporeans use tissue packets to chope seats? Dive into the history, psychology, and etiquette of this uniquely Singaporean tradition.">
+    <meta name="keywords" content="why chope with tissue, Singapore tissue culture, chope seat tradition, hawker centre etiquette">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourusername.github.io/chope-tissue/blog/why-chope-tissue/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Why We Chope with Tissue – A Singaporean Tradition Explained | ChopeTissue">
+    <meta property="og:description" content="The fascinating story behind the most iconic seat‑reservation method in the world.">
+    <meta property="og:image" content="https://yourusername.github.io/chope-tissue/images/blog-chope.jpg">
+    <meta property="og:type" content="article">
+    <title>Why We Chope with Tissue | ChopeTissue Blog</title>
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Structured Data: BlogPosting (already present) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Why We Chope with Tissue – A Singaporean Tradition Explained",
+      "image": "https://yourusername.github.io/chope-tissue/images/blog-chope.jpg",
+      "datePublished": "2026-06-01",
+      "author": { "@type": "Organization", "name": "ChopeTissue" }
+    }
+    </script>
+    <!-- Extra page‑specific styles to make this article a showstopper -->
+    <style>
+        /* ---- article‑page hero animation ---- */
+        .blog-hero {
+            background: linear-gradient(135deg, #fff5f5 0%, #f9e4b7 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .blog-hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        .blog-hero .subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            z-index: 2;
+            position: relative;
+        }
+        /* floating tissue packets in hero background */
+        .floating-packets {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .floating-packets span {
+            position: absolute;
+            font-size: 2.5rem;
+            animation: floatPacket 6s ease-in-out infinite;
+            opacity: 0.3;
+        }
+        .floating-packets span:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+        .floating-packets span:nth-child(2) { top: 70%; left: 15%; animation-delay: 1.5s; font-size: 2rem; }
+        .floating-packets span:nth-child(3) { top: 30%; right: 10%; animation-delay: 3s; font-size: 3rem; }
+        .floating-packets span:nth-child(4) { bottom: 15%; right: 20%; animation-delay: 4.5s; }
+        @keyframes floatPacket {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        /* ---- article layout ---- */
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+        .article-body h2 {
+            font-size: 2rem;
+            margin-top: 2.5rem;
+            color: var(--accent);
+        }
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* ---- timeline ---- */
+        .timeline {
+            margin: 3rem 0;
+            position: relative;
+            padding-left: 40px;
+            border-left: 3px dashed var(--primary);
+        }
+        .timeline-item {
+            margin-bottom: 2.5rem;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.6s ease;
+        }
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .timeline-item::before {
+            content: '🧻';
+            position: absolute;
+            left: -50px;
+            top: 0;
+            font-size: 1.5rem;
+            background: white;
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .timeline-year {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        /* ---- pull quote ---- */
+        .pull-quote {
+            background: var(--accent);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            font-size: 1.4rem;
+            font-style: italic;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(43,45,50,0.2);
+        }
+        .pull-quote::before {
+            content: '“';
+            font-size: 4rem;
+            display: block;
+            line-height: 1;
+        }
+
+        /* ---- tissue rain button ---- */
+        .rain-trigger {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--accent);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 20px 0;
+            border: none;
+            font-size: 1rem;
+        }
+        .rain-trigger:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* ---- chope quiz ---- */
+        .quiz-box {
+            background: #fff;
+            border: 2px solid var(--primary);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .quiz-box h3 {
+            margin-bottom: 1rem;
+        }
+        .quiz-option {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            background: var(--light);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            text-align: left;
+            font-size: 1rem;
+        }
+        .quiz-option:hover {
+            background: #ffe8cc;
+            border-color: var(--secondary);
+        }
+        .quiz-feedback {
+            font-weight: 600;
+            margin-top: 10px;
+            min-height: 24px;
+        }
+
+        /* responsive */
+        @media (max-width: 600px) {
+            .blog-hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Educational disclaimer -->
+    <div class="disclaimer-bar">
+        <p>⚠️ <strong>EDUCATIONAL PROJECT:</strong> This website is a fictitious creation for an academic assignment (IT335C Social Media Analytics) and is not a real business.</p>
+    </div>
+
+    <!-- Site header (same as rest of site) -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../../index.html" class="logo" aria-label="ChopeTissue Home">
+                <img src="../../images/favicon.png" alt="ChopeTissue logo" width="50" height="50">
+                <span class="logo-text">Chope<span class="highlight">Tissue</span></span>
+            </a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../collections/index.html">Collections</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="../index.html">Blog</a></li>
+                    <li><a href="../../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li>Why We Chope with Tissue</li>
+            </ol>
+        </nav>
+
+        <!-- Hero -->
+        <section class="blog-hero">
+            <div class="floating-packets" aria-hidden="true">
+                <span>🧻</span><span>🧻</span><span>🧻</span><span>🪪</span>
+            </div>
+            <h1>Why We Chope with Tissue</h1>
+            <p class="subtitle">The deliciously Singaporean story of seat‑reservation genius</p>
+        </section>
+
+        <!-- Article body -->
+        <article class="article-body">
+            <p><strong>Walk into any busy hawker centre at lunchtime</strong> and you'll see them: packs of tissue paper, sometimes a name card, occasionally an umbrella, all silently declaring "this seat is taken." The practice of <em>choping</em> (reserving) seats with personal items is so deeply embedded in Singapore’s food culture that it has become a national symbol – as recognisable as the Merlion itself. But how did the humble tissue packet become the ultimate seat reservation tool?</p>
+
+            <!-- Timeline section -->
+            <h2>The Origins of the Chope</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">1970s–1980s</span>
+                    <p>Hawker centres mushroom across Singapore. With limited seating during peak hours, people begin leaving personal belongings to secure spots while queuing for food. The tissue packet – cheap, ubiquitous, and given away freely as advertisements – emerges as the perfect "placeholder".</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">1990s</span>
+                    <p>The tissue‑chope becomes a fully‑fledged social contract. A packet of tissues on a table says: "I’m coming back with my laksa. Please find another table." A mutual understanding forms: if you see a tissue, you respect it.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2000s</span>
+                    <p>The Internet meme era begins. #ChopeCulture trends on local forums. Tourists marvel at the phenomenon, and the tissue packet becomes a quirky, uniquely Singaporean souvenir.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">Today</span>
+                    <p>ChopeTissue reinvents the tradition: premium, art‑inspired tissue packets that celebrate Singaporean identity. The chope is no longer just functional – it’s a fashion statement.</p>
+                </div>
+            </div>
+
+            <!-- Pull quote -->
+            <div class="pull-quote">
+                A tissue packet on a table is an unspoken promise: “I will return. This seat is taken. Please respect it.”
+            </div>
+
+            <h2>Why the Tissue, and Not Something Else?</h2>
+            <p>Psychologists suggest that the tissue packet works because it is a <strong>territorial marker</strong> that is both visible and inherently temporary. Unlike a mobile phone or a wallet, a tissue packet signals that the owner will return shortly – it’s not valuable enough to be stolen, but distinctive enough to be noticed. A bag might imply forgetfulness; a tissue says “brb”.</p>
+            <p>Over time, the tissue packet also became a social equaliser. Whether you’re a CEO or a student, your packet of tissues holds the same power – a little square of paper can claim a prime spot at Maxwell Food Centre.</p>
+
+            <h2>The Etiquette of the Chope</h2>
+            <p>While choping is widely accepted, unwritten rules govern its use:</p>
+            <ul>
+                <li><strong>Don’t chope for too long.</strong> A tissue packet should not sit alone for more than 10 minutes. It’s a reservation, not a property deed.</li>
+                <li><strong>Use only one item.</strong> Spreading multiple items across several seats is considered <em>kiasu</em> (overly competitive) and poor form.</li>
+                <li><strong>Smile and say “sorry”</strong> if someone accidentally sits at your choped seat. Politeness makes the system work.</li>
+            </ul>
+
+            <!-- Interactive: Tissue rain button -->
+            <div style="text-align: center;">
+                <button class="rain-trigger" id="tissueRainBtn">Make it rain tissues 🧻</button>
+            </div>
+
+            <!-- Chope quiz -->
+            <div class="quiz-box">
+                <h3>🎓 Test Your Chope Knowledge</h3>
+                <p>Which of these is an acceptable choping item, according to unofficial Singaporean lore?</p>
+                <button class="quiz-option" data-answer="correct">A packet of tissue paper</button>
+                <button class="quiz-option" data-answer="wrong">Your mobile phone</button>
+                <button class="quiz-option" data-answer="wrong">A half‑eaten bowl of noodles</button>
+                <p class="quiz-feedback" id="quizFeedback"></p>
+            </div>
+
+            <h2>From Tradition to Trend</h2>
+            <p>At <strong>ChopeTissue</strong>, we’re taking this everyday ritual and transforming it into a celebration of local design. Our limited‑edition tissue packets feature artwork inspired by Singapore’s heritage – from Merlion watercolours to retro kopitiam table patterns. The next time you chope, why not do it with a packet that tells a story?</p>
+            <p>Because in Singapore, even reserving a seat is an art form.</p>
+
+            <!-- Call to action -->
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="../../collections/index.html" class="cta-button">Explore Our Collections</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="../../images/favicon.png" alt="ChopeTissue icon" width="40" height="40">
+                <p>&copy; 2026 ChopeTissue Pte Ltd (fictional).</p>
+                <p class="edu-note">IT335C Educational Project.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../collections/index.html">Collections</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="../index.html">Blog</a></li>
+                    <li><a href="../../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact (fictional)</h4>
+                <address>📧 hello@chopetissue.sg<br>📍 Singapore 123456</address>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Common JavaScript -->
+    <script src="../../js/main.js"></script>
+    <!-- Extra page‑specific interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ---- Scroll‑trigger timeline items ----
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            timelineItems.forEach(item => observer.observe(item));
+
+            // ---- Tissue rain button ----
+            const rainBtn = document.getElementById('tissueRainBtn');
+            if (rainBtn) {
+                rainBtn.addEventListener('click', function() {
+                    for (let i = 0; i < 15; i++) {
+                        createTissueRaindrop();
+                    }
+                });
+            }
+
+            function createTissueRaindrop() {
+                const drop = document.createElement('span');
+                drop.innerHTML = '🧻';
+                drop.style.position = 'fixed';
+                drop.style.left = Math.random() * window.innerWidth + 'px';
+                drop.style.top = '-40px';
+                drop.style.fontSize = (Math.random() * 30 + 20) + 'px';
+                drop.style.zIndex = '999';
+                drop.style.pointerEvents = 'none';
+                drop.style.animation = 'tissueFall ' + (Math.random() * 2 + 2) + 's linear forwards';
+                document.body.appendChild(drop);
+                drop.addEventListener('animationend', function() {
+                    drop.remove();
+                });
+            }
+
+            // ---- Chope quiz ----
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const quizFeedback = document.getElementById('quizFeedback');
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const answer = this.getAttribute('data-answer');
+                    if (answer === 'correct') {
+                        quizFeedback.innerHTML = '✅ Correct! A tissue packet is the ultimate chope tool.';
+                        quizFeedback.style.color = '#2e7d32';
+                    } else {
+                        quizFeedback.innerHTML = '❌ Not quite. The classic chope item is a tissue packet – safe, cheap, and instantly recognisable.';
+                        quizFeedback.style.color = '#c62828';
+                    }
+                    // disable options after selection
+                    quizOptions.forEach(btn => btn.disabled = true);
+                });
+            });
+        });
+    </script>
+
+    <!-- Inline animation for tissue fall (if not already in main css) -->
+    <style>
+        @keyframes tissueFall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</body>
+</html>
