@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://olwin8.github.io/chope-tissue/sitemap.xml
